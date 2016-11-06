@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="408.0" prefWidth="462.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.Menu">
+   <children>
+      <Label alignment="CENTER" prefHeight="115.0" prefWidth="462.0" text="Minesweeper">
+         <font>
+            <Font name="Cambria" size="36.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+         <textFill>
+            <LinearGradient endX="0.20952380952380953" startX="0.8761904761904762" startY="0.6714285714285714">
+               <stops>
+                  <Stop color="#6f048c" />
+                  <Stop color="#8d6403" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Button mnemonicParsing="false" onAction="#play" prefHeight="25.0" prefWidth="76.0" style="-fx-font-weight: bold;" text="Play" textFill="#8c6304">
+         <VBox.margin>
+            <Insets top="50.0" />
+         </VBox.margin>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#options" prefHeight="25.0" prefWidth="74.0" style="-fx-font-weight: bold;" text="Options" textFill="#8d6403">
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#exit" prefHeight="25.0" prefWidth="78.0" style="-fx-font-weight: bold;" text="Exit" textFill="#8d6403">
+         <effect>
+            <DropShadow blurType="TWO_PASS_BOX" />
+         </effect>
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </Button>
+   </children>
+   <effect>
+      <Glow />
+   </effect>
+</VBox>
